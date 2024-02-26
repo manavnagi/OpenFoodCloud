@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Open Food Cloud</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Welcome to Your Dashboard</h1>
+            <!-- Navigation Menu (if applicable) -->
+            <nav>
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Donations</a></li>
+                    <li><a href="#" id="logout-link">Logout</a></li>
+                    <!-- Add more navigation links as needed -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Form Section -->
+        <section id="food-form">
+            <div class="container">
+                <h2>Enter Available Food Items</h2>
+                <form id="food-input-form">
+                    <!-- Breakfast Section -->
+                    <div class="form-group">
+                        <label for="breakfast">Breakfast:</label>
+                        <input type="text" id="breakfast" name="breakfast" placeholder="Enter breakfast items" required>
+                    </div>
+                    <!-- Lunch Section -->
+                    <div class="form-group">
+                        <label for="lunch">Lunch:</label>
+                        <input type="text" id="lunch" name="lunch" placeholder="Enter lunch items" required>
+                    </div>
+                    <!-- Dinner Section -->
+                    <div class="form-group">
+                        <label for="dinner">Dinner:</label>
+                        <input type="text" id="dinner" name="dinner" placeholder="Enter dinner items" required>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Open Food Cloud. All rights reserved.</p>
+            <!-- Add additional footer content as needed -->
+        </div>
+    </footer>
+
+    
+
+    <!-- Include Firebase JavaScript SDK as ECMAScript modules -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
